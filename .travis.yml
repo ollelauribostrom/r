@@ -14,3 +14,13 @@ install:
   - yarn
 script:
   - yarn test:ci
+after_success:
+  - yarn build-storybook
+deploy:
+  local-dir: stories/dist
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  name: 'Story-bot'
+  on:
+    branch: master
