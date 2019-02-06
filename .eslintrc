@@ -21,6 +21,7 @@
   },
   "globals": {
     "$Shape": true,
-    "$Keys": true
+    "$Keys": true,
+    "SyntheticEvent": true
   }
 }

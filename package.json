@@ -12,6 +12,8 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-options": "^4.1.11",
     "@storybook/react": "^4.1.11",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
@@ -41,7 +43,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "dev": "yarn storybook",
     "test": "jest",
     "test:all": "yarn typecheck && yarn lint && yarn test",
     "test:ci": "yarn typecheck && yarn lint && yarn coverage && yarn coveralls",
