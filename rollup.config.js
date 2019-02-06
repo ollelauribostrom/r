@@ -7,9 +7,24 @@ export default [
   {
     input: 'src/index.js',
     output: [
-      { file: pkg.main, name: 'r', format: 'umd' },
-      { file: pkg.module, name: 'r', format: 'esm' },
+      {
+        file: pkg.main,
+        name: 'r',
+        format: 'umd',
+        globals: {
+          react: 'React',
+        },
+      },
+      {
+        file: pkg.module,
+        name: 'r',
+        format: 'esm',
+        globals: {
+          react: 'React',
+        },
+      },
     ],
+    external: ['react'],
     plugins: [
       resolve({ extensions: ['.jsx', '.js'] }),
       commonjs(),
