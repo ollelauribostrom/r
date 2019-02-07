@@ -20,6 +20,8 @@ Boilerplate for creating/publishing React components.
 mkdir my-awesome-component
 cd my-awesome-component
 git clone https://github.com/ollelauribostrom/r .
+rm -rf ./.git
+git init
 yarn
 ```
 
