@@ -8,7 +8,9 @@ type HelloProps = {
 };
 
 export const Hello = ({ name, onClick }: HelloProps) => (
-  <span onClick={onClick}>Hello {name}!</span>
+  <button type="button" onClick={onClick}>
+    Hello {name}!
+  </button>
 );
 
 Hello.defaultProps = {
