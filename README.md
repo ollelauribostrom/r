@@ -1,5 +1,8 @@
 # ⚛️ r
 
+[![Build Status](https://travis-ci.org/ollelauribostrom/r.svg?branch=master)](https://travis-ci.org/ollelauribostrom/r)
+[![Coverage Status](https://coveralls.io/repos/github/ollelauribostrom/r/badge.svg?branch=master)](https://coveralls.io/github/ollelauribostrom/r?branch=master)
+
 Boilerplate for creating/publishing React components.
 
 ## Features
