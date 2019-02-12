@@ -1,12 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tests for Hello component matches snapshot 1`] = `
+exports[`Tests for ExampleButton component matches snapshot 1`] = `
 <button
   onClick={[Function]}
   type="button"
 >
-  Hello 
   test
-  !
 </button>
 `;

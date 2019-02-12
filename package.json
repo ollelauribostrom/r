@@ -50,18 +50,19 @@
     "test:all": "yarn typecheck && yarn lint && yarn test",
     "test:ci": "yarn typecheck && yarn lint && yarn coverage && yarn coveralls",
     "typecheck": "flow check --include-warnings",
-    "lint": "eslint --ext .jsx,.js src test",
+    "lint": "eslint --ext .jsx,.js src",
     "coverage": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -o stories/dist"
+    "build-storybook": "build-storybook -o book"
   },
   "files": [
     "dist"
   ],
   "jest": {
     "collectCoverageFrom": [
-      "<rootDir>/src/**/**.(js|jsx)"
+      "<rootDir>/src/**/**.(js|jsx)",
+      "!<rootDir>/src/**/**.story.(js|jsx)"
     ],
     "setupFiles": [
       "<rootDir>/test-setup.js"

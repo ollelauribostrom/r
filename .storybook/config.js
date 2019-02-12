@@ -2,7 +2,8 @@ import { addDecorator, configure } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
 
 function loadStories() {
-  require('../stories/Hello.jsx');
+  const req = require.context('../src/components', true, /\.story\.jsx$/);
+  req.keys().forEach(filename => req(filename));
 }
 
 addDecorator(
